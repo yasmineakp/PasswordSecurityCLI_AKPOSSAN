@@ -1,6 +1,6 @@
 import java.security.SecureRandom;
 
-public class Passwordgenerateur {
+public class PasswordGenerator {
 
     private static final String MAJUSCULES = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final String MINUSCULES = "abcdefghijklmnopqrstuvwxyz";

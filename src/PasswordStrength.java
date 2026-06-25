@@ -1,4 +1,4 @@
-public enum Passwordstrength {
+public enum PasswordStrength {
     TRES_FAIBLE,
     FAIBLE,
     MOYEN,

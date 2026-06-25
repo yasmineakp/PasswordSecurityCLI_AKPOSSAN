@@ -2,19 +2,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Passwordgenerateur generator = new Passwordgenerateur();
-        Passwordvalide validator = new Passwordvalide();
+        PasswordGenerator generator = new  PasswordGenerator();
+        PasswordValidator validator = new  PasswordValidator();
 
         String[] passwords = generator.generateBatch(
                 5, 12, true, true, true, true
         );
 
-        System.out.println("=== RESULTATS ===");
+        System.out.println("=== RESULTATS (Docker) ===");
 
         for (String password : passwords) {
-            Passwordstrength strength = validator.checkStrength(password);
-
-            System.out.println(password + " -> " + strength);
+            String score = validator.checkStrength(password);
+            System.out.println(password + " -> " + score);
         }
     }
 }
